@@ -14,3 +14,7 @@ df = pd.read_table('SMSSpamCollection',
 
 
 print(df.head())
+
+df['label'] = df.label.map({'ham':0, 'spam':1})
+print(df.shape)
+print(df.head());
