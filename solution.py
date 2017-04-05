@@ -13,6 +13,7 @@ df = pd.read_table('SMSSpamCollection',
                    names=['label', 'sms_message'])
 
 
+<<<<<<< .merge_file_ZliDKR
 print("Dataframe head before modifications\n", df.head(), "\n")
 
 '''
@@ -100,3 +101,10 @@ print('Number of rows in the test set: {}'.format(X_test.shape[0]))
 
 
 
+=======
+print(df.head())
+
+df['label'] = df.label.map({'ham':0, 'spam':1})
+print(df.shape)
+print(df.head());
+>>>>>>> .merge_file_6TLlub
